@@ -110,6 +110,11 @@ document.addEventListener("DOMContentLoaded", function() {
                         populationDataContainer.innerHTML = "";
                     }
 
+                    // Add a heading for population data
+                    const heading = document.createElement("h2");
+                    heading.textContent = "US POPULATION DATA RANGING 2013-2021";
+                    populationDataContainer.appendChild(heading);
+
                     // Append details with a delay
                     const details = [
                         `ID Nation: ${populationData["ID Nation"]}`,
