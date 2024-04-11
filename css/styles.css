@@ -91,3 +91,14 @@ body {
     border-radius: 5px; /* Rounded corners */
     cursor: pointer; /* Cursor style */
 }
+
+/* Styles for the view bar graph button on hover */
+#view-bar-graph-button:hover {
+    background-color: indigo; /* Background color when hovered over */
+}
+
+/* Styles for the canvas inside the population data container */
+#population-data canvas {
+    margin: 0 auto; /* Center horizontally */
+}
+
