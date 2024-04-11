@@ -29,3 +29,11 @@ body {
     padding: 2vw; /* Padding */
     text-align: center; /* Center-align text */
 }
+
+/* Styles for the search container */
+#search-container {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align items */
+    margin-top: 1vw; /* Margin from the top */
+}
