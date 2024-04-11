@@ -1,18 +1,18 @@
-// Wait for the DOMContentLoaded event before executing the script
+// Waiting for the DOMContentLoaded event before executing the script
 document.addEventListener("DOMContentLoaded", function() {
     // Get references to HTML elements
-    const populationDataContainer = document.getElementById("population-data"); // Container for population data
-    const searchBox = document.getElementById("search-box"); // Input box for search
-    const searchButton = document.getElementById("search-button"); // Button to trigger search
-    const viewBarGraphButton = document.getElementById("view-bar-graph-button"); // Button to view bar graph
+    const populationDataContainer = document.getElementById("population-data"); // Reference to the container for population data
+    const searchBox = document.getElementById("search-box"); // Reference to the input box for search
+    const searchButton = document.getElementById("search-button"); // Reference to the button to trigger search
+    const viewBarGraphButton = document.getElementById("view-bar-graph-button"); // Reference to the button to view bar graph
 
-    // Define the API endpoint URL
+    // Defining the API endpoint URL
     const apiUrl = "https://datausa.io/api/data?drilldowns=Nation&measures=Population";
 
-    // Function to fetch data from the API
+    // Function to fetch data from the API (using GET method)
     async function fetchData() {
         try {
-            // Fetch data from the API
+            // Fetch data from the API using GET method
             const response = await fetch(apiUrl);
 
             // Check if the response is successful
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         left: 10, // Padding left
                         right: 10, // Padding right
                         top: 20, // Padding top
-                        bottom: 10 // Padding bottom
+                        bottom: 50 // Increased bottom padding
                     }
                 },
                 scales: {
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
         viewBarGraphButton.style.display = "none";
     }
 
-    // Call the fetchData function to initiate the API request
+    // Call the fetchData function to initiate the API request (GET method used here)
     fetchData().then(data => {
         // Flag to track whether data is being displayed
         let isDataDisplayed = false;
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Flag to track whether a search is in progress
         let isSearching = false;
 
-        // Event listener for search button
+        // Event listener for search button (no API method used here)
         searchButton.addEventListener("click", async function() {
             // If search is already in progress, ignore subsequent clicks
             if (isSearching) return;
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     // Add a heading for population data
                     const heading = document.createElement("h2");
-                    heading.textContent = "US POPULATION DATA RANGING 2013-2021";
+                    heading.textContent = "US POPULATION DATA FROM 2013-2021";
                     populationDataContainer.appendChild(heading);
 
                     // Append details with a delay
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
             isSearching = false;
         });
 
-        // Event listener for view bar graph button
+        // Event listener for view bar graph button (no API method used here)
         viewBarGraphButton.addEventListener("click", function() {
             // Collect all years and corresponding populations
             const years = data.data.map(item => item.Year);
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Event listener for search box for input change
+        // Event listener for search box for input change (no API method used here)
         searchBox.addEventListener("input", function() {
             // Clear the displayed data and hide the view bar graph button
             populationDataContainer.innerHTML = "";

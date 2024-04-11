@@ -43,6 +43,8 @@ body {
     margin-bottom: 0.5vw; /* Margin from the bottom */
     width: 20vw; /* Width of the input box */
     padding: 0.5vw; /* Padding */
+    border-radius: 20px; /* Add rounded corners */
+
 }
 
 /* Styles for the search button */
@@ -101,5 +103,7 @@ body {
 #population-data canvas {
     margin: 0 auto; /* Center horizontally */
 }
+
+
 
 
