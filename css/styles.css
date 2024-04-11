@@ -4,3 +4,17 @@ body {
     padding: 0; /* Remove default padding */
     font-family: Arial, sans-serif; /* Set default font family */
 }
+
+
+/* Styles for the background image */
+#background-image {
+    position: absolute; /* Position absolute to cover the entire viewport */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100vw; /* Full width of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-image: url('../photo.jpg'); /* Background image URL */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    z-index: -1; /* Place behind other elements */
+}
