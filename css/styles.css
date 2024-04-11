@@ -54,3 +54,9 @@ body {
     border-radius: 0.5vw; /* Rounded corners */
     cursor: pointer; /* Cursor style */
 }
+
+/* Styles for the search button on hover */
+#search-button:hover {
+    background-color: blue; /* Background color when hovered over */
+}
+
