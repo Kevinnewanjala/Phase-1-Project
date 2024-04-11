@@ -18,3 +18,14 @@ body {
     background-position: center; /* Center the background image */
     z-index: -1; /* Place behind other elements */
 }
+
+
+/* Styles for the top bar */
+#top-bar {
+    background-color: rgb(70, 94, 36); /* Background color */
+    color: white; /* Text color */
+    font-size: 3vw; /* Font size */
+    font-weight: 950; /* Font weight */
+    padding: 2vw; /* Padding */
+    text-align: center; /* Center-align text */
+}
