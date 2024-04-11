@@ -66,3 +66,28 @@ body {
     margin-top: 2vw; /* Margin from the top */
     padding: 20px; /* Padding */
 }
+
+/* Styles for the information about USA */
+#info-usa {
+    position: fixed; /* Fixed positioning */
+    bottom: 0; /* Position at the bottom */
+    left: 0; /* Position at the left */
+    width: 100vw; /* Full width */
+    background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
+    color: white; /* Text color */
+    padding: 1vw; /* Padding */
+    text-align: center; /* Center-align text */
+}
+
+/* Styles for the view bar graph button */
+#view-bar-graph-button {
+    display: none; /* Initially hidden */
+    margin: 0 auto; /* Center horizontally */
+    margin-top: 20px; /* Margin from the top */
+    padding: 10px 20px; /* Padding */
+    background-color: gray; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+}
