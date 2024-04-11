@@ -60,3 +60,9 @@ body {
     background-color: blue; /* Background color when hovered over */
 }
 
+/* Styles for the population data container */
+#population-data {
+    text-align: center; /* Center-align text */
+    margin-top: 2vw; /* Margin from the top */
+    padding: 20px; /* Padding */
+}
