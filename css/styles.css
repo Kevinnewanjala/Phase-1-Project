@@ -44,6 +44,7 @@ body {
     width: 20vw; /* Width of the input box */
     padding: 0.5vw; /* Padding */
     border-radius: 20px; /* Add rounded corners */
+    text-align: center; /* Center-align text */
 
 }
 
@@ -104,6 +105,9 @@ body {
     margin: 0 auto; /* Center horizontally */
 }
 
+#search-box::placeholder {
+    text-align: center; /* Center-align placeholder text */
+}
 
 
 
