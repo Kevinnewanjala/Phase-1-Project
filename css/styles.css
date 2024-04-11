@@ -37,3 +37,20 @@ body {
     align-items: center; /* Center-align items */
     margin-top: 1vw; /* Margin from the top */
 }
+
+/* Styles for the search box */
+#search-box {
+    margin-bottom: 0.5vw; /* Margin from the bottom */
+    width: 20vw; /* Width of the input box */
+    padding: 0.5vw; /* Padding */
+}
+
+/* Styles for the search button */
+#search-button {
+    background-color: gray; /* Background color */
+    color: white; /* Text color */
+    padding: 0.8vw 1.5vw; /* Padding */
+    border: none; /* No border */
+    border-radius: 0.5vw; /* Rounded corners */
+    cursor: pointer; /* Cursor style */
+}
