@@ -1,0 +1,6 @@
+/* Reset default styles for the entire document */
+body {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set default font family */
+}
