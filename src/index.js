@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Flag to track whether a search is in progress
         let isSearching = false;
 
-        // Event listener for search button (no API method used here)
+        // Event listener for search button 
         searchButton.addEventListener("click", async function() {
             // If search is already in progress, ignore subsequent clicks
             if (isSearching) return;
@@ -153,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function() {
             isSearching = false;
         });
 
-        // Event listener for view bar graph button (no API method used here)
+        // Event listener for view bar graph button 
         viewBarGraphButton.addEventListener("click", function() {
             // Collect all years and corresponding populations
             const years = data.data.map(item => item.Year);
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Event listener for search box for input change (no API method used here)
+        // Event listener for search box for input change
         searchBox.addEventListener("input", function() {
             // Clear the displayed data and hide the view bar graph button
             populationDataContainer.innerHTML = "";

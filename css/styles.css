@@ -1,113 +1,95 @@
-/* Reset default styles for the entire document */
 body {
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-    font-family: Arial, sans-serif; /* Set default font family */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-
-/* Styles for the background image */
 #background-image {
-    position: absolute; /* Position absolute to cover the entire viewport */
-    top: 0; /* Align to the top */
-    left: 0; /* Align to the left */
-    width: 100vw; /* Full width of the viewport */
-    height: 100vh; /* Full height of the viewport */
-    background-image: url('../photo.jpg'); /* Background image URL */
-    background-size: cover; /* Cover the entire container */
-    background-position: center; /* Center the background image */
-    z-index: -1; /* Place behind other elements */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../photo.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
-
-/* Styles for the top bar */
 #top-bar {
-    background-color: rgb(70, 94, 36); /* Background color */
-    color: white; /* Text color */
-    font-size: 3vw; /* Font size */
-    font-weight: 950; /* Font weight */
-    padding: 2vw; /* Padding */
-    text-align: center; /* Center-align text */
+    background-color: rgb(70, 94, 36);
+    color: white;
+    font-size: 3vw;
+    font-weight: 950;
+    padding: 2vw;
+    text-align: center;
 }
 
-/* Styles for the search container */
 #search-container {
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center-align items */
-    margin-top: 1vw; /* Margin from the top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1vw;
 }
 
-/* Styles for the search box */
 #search-box {
-    margin-bottom: 0.5vw; /* Margin from the bottom */
-    width: 20vw; /* Width of the input box */
-    padding: 0.5vw; /* Padding */
-    border-radius: 20px; /* Add rounded corners */
-    text-align: center; /* Center-align text */
-
+    margin-bottom: 0.5vw;
+    width: 20vw;
+    padding: 0.5vw;
+    border-radius: 20px;
+    text-align: center;
 }
 
-/* Styles for the search button */
 #search-button {
-    background-color: gray; /* Background color */
-    color: white; /* Text color */
-    padding: 0.8vw 1.5vw; /* Padding */
-    border: none; /* No border */
-    border-radius: 0.5vw; /* Rounded corners */
-    cursor: pointer; /* Cursor style */
+    background-color: gray;
+    color: white;
+    padding: 0.8vw 1.5vw;
+    border: none;
+    border-radius: 0.5vw;
+    cursor: pointer;
 }
 
-/* Styles for the search button on hover */
 #search-button:hover {
-    background-color: blue; /* Background color when hovered over */
+    background-color: blue;
 }
 
-/* Styles for the population data container */
 #population-data {
-    text-align: center; /* Center-align text */
-    margin-top: 2vw; /* Margin from the top */
-    padding: 20px; /* Padding */
+    text-align: center;
+    margin-top: 2vw;
+    padding: 20px;
 }
 
-/* Styles for the information about USA */
 #info-usa {
-    position: fixed; /* Fixed positioning */
-    bottom: 0; /* Position at the bottom */
-    left: 0; /* Position at the left */
-    width: 100vw; /* Full width */
-    background-color: rgba(0, 0, 0, 0.5); /* Background color with opacity */
-    color: white; /* Text color */
-    padding: 1vw; /* Padding */
-    text-align: center; /* Center-align text */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1vw;
+    text-align: center;
 }
 
-/* Styles for the view bar graph button */
 #view-bar-graph-button {
-    display: none; /* Initially hidden */
-    margin: 0 auto; /* Center horizontally */
-    margin-top: 20px; /* Margin from the top */
-    padding: 10px 20px; /* Padding */
-    background-color: gray; /* Background color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Cursor style */
+    display: none;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Styles for the view bar graph button on hover */
 #view-bar-graph-button:hover {
-    background-color: indigo; /* Background color when hovered over */
+    background-color: indigo;
 }
 
-/* Styles for the canvas inside the population data container */
 #population-data canvas {
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
 }
 
 #search-box::placeholder {
-    text-align: center; /* Center-align placeholder text */
+    text-align: center;
 }
-
-
-
